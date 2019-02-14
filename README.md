@@ -67,3 +67,7 @@ This project tries to reproduce a strange behavior when you try to run a *.js te
  - babel-6-compatibility:
 
     This branch downgrade the `jest` library to the 23 version, which makes necessary to install a babel-core bridge to make this working as this `jest` version doesn't support babel 7. The purpose of this separate branch is to prove that the error happens even if you work with a compatible version of `jest` with `ts-jest`.
+
+ - typescript-tests:
+    
+    The purpose of this branch is to try to avoid as much explicit babel dependencies as possible.
