@@ -1,4 +1,3 @@
-const { jsWithBabel: tsjPreset } = require('ts-jest/presets');
 
 module.exports = {
     globals: {
@@ -11,8 +10,8 @@ module.exports = {
     'transformIgnorePatterns': [
         'node_modules/(?!(arlas-web-core|arlas-api)/)'
     ],
+    'testRegex': '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
     'transform': {
-        ...tsjPreset.transform,
         '^.+\\.tsx?$': 'ts-jest'
     },
     'moduleNameMapper': {
